@@ -73,7 +73,7 @@ public class ButtonActions : MonoBehaviour
     public void Home()
     {
         //LANGUAGE
-        GameManager.instance.selectPanel.Show("是否确定退出？未保存的进度会丢失。", 2);
+        GameManager.instance.selectPanel.Show("Confirm to quit? Unsaved progress will be lost.", 2);
     }
 
     public void Save()

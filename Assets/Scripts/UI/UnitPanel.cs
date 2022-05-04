@@ -59,7 +59,7 @@ public class UnitPanel : MonoBehaviour
         else
         {
             //LANGUAGE
-            GameManager.instance.Alert("不能删除歌词的主单元！");
+            GameManager.instance.Alert("Cannot delete the preserved Unit of a Chunk!");
         }
     }
 
@@ -107,7 +107,7 @@ public class UnitPanel : MonoBehaviour
         {
             channel.text = unit.channel + "";
             //LANGUAGE
-            GameManager.instance.Alert("不能改变轨道，\n" + e.Message);
+            GameManager.instance.Alert("Cannot modyfy the channel.\n" + e.Message);
         }
     }
 
@@ -145,7 +145,7 @@ public class UnitPanel : MonoBehaviour
         catch
         {
             //LANGUAGE
-            GameManager.instance.Alert(string.IsNullOrEmpty(errorCode) ? "分隔符错误，请使用半角符号';'。\n" : "无效的MIDI代码:\n" + errorCode);
+            GameManager.instance.Alert(string.IsNullOrEmpty(errorCode) ? "Wrong format, please use ASCII characters.\n" : "Invalid MIDI code:\n" + errorCode);
             return null;
         }
     }

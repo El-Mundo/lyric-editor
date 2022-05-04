@@ -64,16 +64,16 @@ public class EditArea : MonoBehaviour
         {
             //LANGUAGE
             case 0:
-                info = "无事件";
+                info = "no event";
                 break;
             case 1:
-                info = "等待";
+                info = "waiting";
                 break;
             case 2:
-                info = "歌曲信息";
+                info = "song info";
                 break;
             default:
-                info = "视觉效果#" + ((int)eventCode.value - 3);
+                info = "effect#" + ((int)eventCode.value - 3);
                 break;
         }
         eventIndicator.text = (int)eventCode.value + "(" + info + ")";
@@ -115,7 +115,7 @@ public class EditArea : MonoBehaviour
         catch
         {
             //LANGUAGE
-            GameManager.instance.Alert("请输入有效的数字");
+            GameManager.instance.Alert("Please input a correct number.");
             return;
         }
 

@@ -54,11 +54,11 @@ public class VirtualChunk : MonoBehaviour, IObjectPoolHandler<VirtualChunk>
             if (chunk.eventType == 2)
             {
                 //LANGUAGE
-                text.text = "(歌曲信息)";
+                text.text = "(Song info)";
             }
             else if (chunk.eventType == 1)
             {
-                text.text = "(等待)...";
+                text.text = "(Waiting...)";
             }
             else
             {

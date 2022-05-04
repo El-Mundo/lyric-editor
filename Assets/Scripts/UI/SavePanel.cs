@@ -26,13 +26,13 @@ public class SavePanel : MonoBehaviour
         switch (language.value)
         {
             case 0:
-                lan = "CHN";
+                lan = "ENG";
                 break;
             case 1:
-                lan = "CHN-TW";
+                lan = "CHN";
                 break;
             case 2:
-                lan = "ENG";
+                lan = "CHN-TW";
                 break;
             case 3:
                 lan = "JPN";
@@ -56,13 +56,13 @@ public class SavePanel : MonoBehaviour
         int lan = 0;
         switch (song.language)
         {
-            case "CHN":
+            case "ENG":
                 lan = 0;
                 break;
-            case "CHN-TW":
+            case "CHN":
                 lan = 1;
                 break;
-            case "ENG":
+            case "CHN-TW":
                 lan = 2;
                 break;
             case "JPN":
@@ -75,7 +75,7 @@ public class SavePanel : MonoBehaviour
         language.value = lan;
         velocity.value = song.span;
         //LANGUAGE
-        statistics.text = "歌词组数:" + GameManager.instance.chunks.Count + " 断句:" + GameManager.instance.song.sentences.Length;
+        statistics.text = "Chunks: " + GameManager.instance.chunks.Count + ", Sentences: " + GameManager.instance.song.sentences.Length;
         UpdateIndicator();
     }
 
@@ -91,7 +91,7 @@ public class SavePanel : MonoBehaviour
                 rounded = dec[0] + "." + (dec[1].Length > 2 ? dec[1].Substring(0, 2) : dec[1]);
             }
         }
-        velocityIndicator.text = "通过时长:" + rounded + "秒";
+        velocityIndicator.text = "Displayed Time: " + rounded + "sec";
     }
 
 }

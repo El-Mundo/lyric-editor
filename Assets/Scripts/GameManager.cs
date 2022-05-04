@@ -227,7 +227,8 @@ public class GameManager : MonoBehaviour
         }
         catch(System.Exception e)
         {
-            Alert("加载媒体文件失败，\n错误原因：" + e.Message);
+            //LANGUAGE
+            Alert("Failed to load media,error message:\n" + e.Message);
             return;
         }
 
@@ -253,7 +254,8 @@ public class GameManager : MonoBehaviour
 
     private void VideoErrorEvent(VideoPlayer s, string m)
     {
-        AlertFatal("视频文件已损坏，错误原因：" + m);
+        //LANGUAGE
+        AlertFatal("Video file has been corrupted, error message:\n" + m);
     }
 
     private void PlayExternalAudioFile(string filePath, int fileType)
@@ -284,7 +286,8 @@ public class GameManager : MonoBehaviour
         if (System.IO.File.Exists(path))
         {
             selectPanel.bufferedArg = path;
-            selectPanel.Show("检测到重名文件，是否覆盖？", 1);
+            //LANGUAGE
+            selectPanel.Show("Duplicate filename has been detected.\nReplace the existing file?", 1);
         }
         else
         {
@@ -379,7 +382,7 @@ public class GameManager : MonoBehaviour
             if(c.endPosition - c.startPosition < Song.CHUNK_MIN_LENGTH)
             {
                 //LANGUAGE
-                throw (new System.Exception("Chunk时长不可小于" + Song.CHUNK_MIN_LENGTH + "秒"));
+                throw (new System.Exception("Chunk length must be longer than " + Song.CHUNK_MIN_LENGTH + "sec."));
             }
 
             c.colorCode = "#" + ColorUtility.ToHtmlStringRGBA(Song.DEFAULT_PLAYED_COLOUR);
@@ -395,7 +398,7 @@ public class GameManager : MonoBehaviour
             if(!(CheckChunkOverlap(vc, true) && CheckChunkOverlap(vc, false)))
             {
                 //LANGUAGE
-                throw (new System.Exception("选区与其他Chunk重叠。"));
+                throw (new System.Exception("Selected time duration overlays with another chunk."));
             }
             SelectChunk(vc);
         }
@@ -410,7 +413,7 @@ public class GameManager : MonoBehaviour
                 }
             }
             //LANGUAGE
-            Alert("不能创建Chunk。\n" + e.Message);
+            Alert("Cannot create the Chunk.\n" + e.Message);
             Debug.LogException(e);
         }
     }
@@ -484,13 +487,13 @@ public class GameManager : MonoBehaviour
                 if (start > end)
                 {
                     //LANGUAGE
-                    throw (new System.Exception("入点不能在出点之后。"));
+                    throw (new System.Exception("The end time must be later than the start time."));
                 }
 
                 if(end - start < Song.CHUNK_MIN_LENGTH)
                 {
                     //LANGUAGE
-                    throw (new System.Exception("歌词组时长不得小于" + Song.CHUNK_MIN_LENGTH + "秒"));
+                    throw (new System.Exception("Chunk length must be longer than " + Song.CHUNK_MIN_LENGTH + "sec."));
                 }
 
                 selectedChunk.chunk.startPosition = start;
@@ -503,7 +506,7 @@ public class GameManager : MonoBehaviour
                 if (!(CheckChunkOverlap(selectedChunk, true) && CheckChunkOverlap(selectedChunk, false)))
                 {
                     //LANGUAGE
-                    throw (new System.Exception("选区与其他歌词组重叠。"));
+                    throw (new System.Exception("Selected time duration overlays with another chunk."));
                 }
 
                 selectedChunk.UpdateDisplay();

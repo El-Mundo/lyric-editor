@@ -158,7 +158,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -18.99997, y: -44.999985}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &3815167
 MonoBehaviour:
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u989C\u8272"
+  m_Text: Color
 --- !u!222 &3815168
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -566,7 +566,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u662F"
+  m_Text: Yes
 --- !u!222 &39626132
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -734,7 +734,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0.000015258789}
   m_SizeDelta: {x: 0, y: 493.29663}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &103823747
@@ -1105,8 +1105,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00000047683716}
-  m_SizeDelta: {x: 80, y: 30}
+  m_AnchoredPosition: {x: -10, y: -0.00000047683716}
+  m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &137313011
 MonoBehaviour:
@@ -1141,7 +1141,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F39\u5E55\u901F\u5EA6\n"
+  m_Text: 'Shoot Speed
+
+'
 --- !u!222 &137313012
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1385,7 +1387,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.00000047683716}
-  m_SizeDelta: {x: 80, y: 30}
+  m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &145933082
 MonoBehaviour:
@@ -1420,7 +1422,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BED\u8A00\n"
+  m_Text: 'Language
+
+'
 --- !u!222 &145933083
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1659,13 +1663,13 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: "\u4E2D\u6587\uFF08\u7B80\u4F53\uFF09"
-      m_Image: {fileID: 0}
-    - m_Text: "\u4E2D\u6587\uFF08\u7E41\u9AD4\uFF09"
-      m_Image: {fileID: 0}
     - m_Text: English
       m_Image: {fileID: 0}
-    - m_Text: "\u65E5\u672C\u8A9E"
+    - m_Text: Chinese (Simplified)
+      m_Image: {fileID: 0}
+    - m_Text: Chinese (Traditional)
+      m_Image: {fileID: 0}
+    - m_Text: Japanese
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2088,7 +2092,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &216638595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2383,7 +2387,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &228244937
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2634,13 +2638,13 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: "\u4E2D\u6587\uFF08\u7B80\u4F53\uFF09"
-      m_Image: {fileID: 0}
-    - m_Text: "\u4E2D\u6587\uFF08\u7E41\u9AD4\uFF09"
-      m_Image: {fileID: 0}
     - m_Text: English
       m_Image: {fileID: 0}
-    - m_Text: "\u65E5\u672C\u8A9E"
+    - m_Text: Chinese (Simplified)
+      m_Image: {fileID: 0}
+    - m_Text: Chinese (Traditional)
+      m_Image: {fileID: 0}
+    - m_Text: Japanese
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2855,7 +2859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -12, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &263745845
@@ -2891,7 +2895,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4E8B\u4EF6\u503C\n"
+  m_Text: 'Event Index
+
+'
 --- !u!222 &263745846
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2935,7 +2941,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.00000047683716}
-  m_SizeDelta: {x: 80, y: 30}
+  m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &269176259
 MonoBehaviour:
@@ -2970,7 +2976,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7279\u6B8A\u63CF\u8FF0\n"
+  m_Text: 'Description
+
+'
 --- !u!222 &269176260
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3038,7 +3046,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -3049,7 +3057,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F3A\u5236\u9009\u9879"
+  m_Text: Force Question
 --- !u!222 &269374483
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4021,7 +4029,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7F16\u8F91\u5355\u5143"
+  m_Text: Edit Units
 --- !u!222 &365832773
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4404,7 +4412,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -18}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 320, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &387055291
 MonoBehaviour:
@@ -4439,7 +4447,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u901A\u8FC7\u65F6\u957F:  \u79D2"
+  m_Text: 'Displayed Time:   Sec'
 --- !u!222 &387055292
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4870,7 +4878,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -60, y: -60}
-  m_SizeDelta: {x: 160, y: 50}
+  m_SizeDelta: {x: 480, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &434052118
 MonoBehaviour:
@@ -5086,7 +5094,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4E2D\u6587\uFF08\u7B80\u4F53\uFF09"
+  m_Text: English
 --- !u!222 &436440735
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5486,7 +5494,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.00000047683716}
-  m_SizeDelta: {x: 80, y: 30}
+  m_SizeDelta: {x: 53.43225, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &477608835
 MonoBehaviour:
@@ -5521,7 +5529,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5E74\u4EE3"
+  m_Text: Date
 --- !u!222 &477608836
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6357,7 +6365,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5411\u5DE6\u5BF9\u9F50"
+  m_Text: Align to Left
 --- !u!222 &519414558
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6688,7 +6696,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5973287}
-  m_AnchorMax: {x: 1, y: 0.9999999}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7237,7 +7245,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &588552529
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7783,7 +7791,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6B4C\u624B\n"
+  m_Text: 'Singer
+
+'
 --- !u!222 &654900770
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7999,7 +8009,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6B4C\u8BCD"
+  m_Text: Lyric
 --- !u!222 &662631558
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8043,7 +8053,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.0000019073486}
-  m_SizeDelta: {x: 30, y: 30}
+  m_SizeDelta: {x: 40, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &670732141
 MonoBehaviour:
@@ -8078,7 +8088,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5FEB"
+  m_Text: Fast
 --- !u!222 &670732142
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8498,7 +8508,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u9009\u62E9\u6587\u4EF6..."
+  m_Text: Select a file...
 --- !u!222 &687765595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8542,7 +8552,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.00000047683716}
-  m_SizeDelta: {x: 80, y: 30}
+  m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &688889043
 MonoBehaviour:
@@ -8577,7 +8587,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4F5C\u66F2"
+  m_Text: Composer
 --- !u!222 &688889044
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8942,7 +8952,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6CE8\u97F3\n"
+  m_Text: 'Notation
+
+'
 --- !u!222 &714813784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10391,7 +10403,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6B4C\u8BCD\u7EC4\u7F16\u8F91"
+  m_Text: Chunk Editing
 --- !u!222 &891633673
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10506,7 +10518,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &931521370
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10585,7 +10597,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4E2D\u6587\uFF08\u7B80\u4F53\uFF09"
+  m_Text: English
 --- !u!222 &932758799
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11099,7 +11111,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.00000047683716}
-  m_SizeDelta: {x: 80, y: 30}
+  m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &955862136
 MonoBehaviour:
@@ -11134,7 +11146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4F5C\u8BCD"
+  m_Text: Songwriter
 --- !u!222 &955862137
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11424,7 +11436,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &992620736
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11503,7 +11515,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &997604175
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11582,7 +11594,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BED\u8A00\n"
+  m_Text: 'Language
+
+'
 --- !u!222 &1005193789
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11936,7 +11950,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6807\u9898"
+  m_Text: Title
 --- !u!222 &1039259249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12404,7 +12418,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6807\u9898"
+  m_Text: Title
 --- !u!222 &1112042128
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12520,7 +12534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &1133775817
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12599,7 +12613,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u9ED8\u8BA4\u989C\u8272"
+  m_Text: Default Color
 --- !u!222 &1154850174
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13421,7 +13435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7ED3\u675F"
+  m_Text: End
 --- !u!222 &1219742320
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13536,7 +13550,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F00\u59CB"
+  m_Text: Start
 --- !u!222 &1236351245
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13840,7 +13854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6B4C\u66F2\u4FE1\u606F"
+  m_Text: Song Info
 --- !u!222 &1277629052
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13960,8 +13974,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 13.5, y: 0}
-  m_SizeDelta: {x: -37, y: 32}
+  m_AnchoredPosition: {x: 8.5, y: 0}
+  m_SizeDelta: {x: -27, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284096582
 MonoBehaviour:
@@ -13985,7 +13999,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -13996,7 +14010,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u65AD\u53E5"
+  m_Text: Sentence End
 --- !u!222 &1284096583
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14077,7 +14091,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.00000047683716}
-  m_SizeDelta: {x: 80, y: 30}
+  m_SizeDelta: {x: 97.478775, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1300398626
 MonoBehaviour:
@@ -14112,7 +14126,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7279\u6B8A\u63CF\u8FF0\n"
+  m_Text: 'Description
+
+'
 --- !u!222 &1300398627
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14227,7 +14243,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &1327613394
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14761,7 +14777,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u52A0\u8F7D\u6587\u4EF6\n"
+  m_Text: 'Select File
+
+'
 --- !u!222 &1366674098
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15531,7 +15549,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5220\u9664"
+  m_Text: Delete
 --- !u!222 &1492340570
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15702,7 +15720,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -15713,7 +15731,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8FDE\u6253\u9009\u9879"
+  m_Text: Long Chunk
 --- !u!222 &1512440652
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15867,7 +15885,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6B4C\u66F2\u4FE1\u606F"
+  m_Text: Song Info
 --- !u!222 &1531347495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15946,7 +15964,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5426"
+  m_Text: No
 --- !u!222 &1531886946
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16260,7 +16278,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4F5C\u66F2"
+  m_Text: Composer
 --- !u!222 &1553248312
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16520,7 +16538,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 30, y: 40}
-  m_SizeDelta: {x: 120, y: 50}
+  m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1586287694
 MonoBehaviour:
@@ -16555,7 +16573,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5A92\u4F53/\u5DE5\u7A0B\u6587\u4EF6"
+  m_Text: Media/Project File
 --- !u!222 &1586287695
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16834,7 +16852,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &1598927678
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17213,7 +17231,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5E74\u4EE3"
+  m_Text: Date
 --- !u!222 &1616861907
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18513,7 +18531,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u521B\u5EFA\u9879\u76EE"
+  m_Text: Create Project
 --- !u!222 &1793596090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19216,7 +19234,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u786E\u5B9A"
+  m_Text: Continue
 --- !u!222 &1885120973
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19576,7 +19594,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &1902944598
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19840,7 +19858,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.000002861023}
-  m_SizeDelta: {x: 30, y: 30}
+  m_SizeDelta: {x: 40, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1920778283
 MonoBehaviour:
@@ -19875,7 +19893,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6162"
+  m_Text: Slow
 --- !u!222 &1920778284
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20610,7 +20628,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &1980610521
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20897,7 +20915,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.00000047683716}
-  m_SizeDelta: {x: 80, y: 30}
+  m_SizeDelta: {x: 55.52971, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &2027480415
 MonoBehaviour:
@@ -20932,7 +20950,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4F5C\u8BCD"
+  m_Text: Writer
 --- !u!222 &2027480416
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21700,7 +21718,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6B4C\u624B\n"
+  m_Text: 'Singer
+
+'
 --- !u!222 &2136755194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21920,7 +21940,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u8F93\u5165..."
+  m_Text: Click to input...
 --- !u!222 &2143984574
 CanvasRenderer:
   m_ObjectHideFlags: 0

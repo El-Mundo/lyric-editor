@@ -35,13 +35,13 @@ public class MediaPanel : MonoBehaviour
         switch (language.value)
         {
             case 0:
-                lan = "CHN";
+                lan = "ENG";
                 break;
             case 1:
-                lan = "CHN-TW";
+                lan = "CHN";
                 break;
             case 2:
-                lan = "ENG";
+                lan = "CHN-TW";
                 break;
             case 3:
                 lan = "JPN";

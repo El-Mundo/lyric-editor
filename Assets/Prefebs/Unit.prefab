@@ -304,7 +304,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.0000076293945}
-  m_SizeDelta: {x: 55.3302, y: 30}
+  m_SizeDelta: {x: 60.188477, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &2189160275869509253
 CanvasRenderer:
@@ -347,7 +347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8F68\u9053\uFF1A"
+  m_Text: 'Channel:'
 --- !u!1 &2189160275882446959
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +505,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "MIDI\uFF1A"
+  m_Text: 'MIDI: '
 --- !u!1 &2189160276121707029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,7 +1578,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6B4C\u8BCD\uFF1A"
+  m_Text: 'Lyric: '
 --- !u!1 &2189160277428786566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,7 +1651,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.0000076293945}
-  m_SizeDelta: {x: 53.861084, y: 30}
+  m_SizeDelta: {x: 60.5813, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &2189160277599448870
 CanvasRenderer:
@@ -1694,7 +1694,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6CE8\u97F3\uFF1A"
+  m_Text: 'Notation:'
 --- !u!1 &2189160277607169418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,15 +1765,15 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 2
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: c#3,do,1.0;...
 --- !u!1 &2564374542686746031
 GameObject:
   m_ObjectHideFlags: 0
