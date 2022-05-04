@@ -17,12 +17,12 @@ https://github.com/El-Mundo/lyric-editor/releases/download/release/IMV4_Editor_G
 
 # IMV4 Data Structure
 
-Song
+      -Song
 
-  -Sentence
+        -Sentence
     
-    -Chunk
+          -Chunk
     
-      -(Alternative) Unit(s)
+            -(Alternative) Unit
       
-        -MIDI Note
+              -MIDI Note
