@@ -28,7 +28,7 @@ namespace Lyrics.Songs {
         /// </summary>
         public string date;
         /// <summary>
-        /// The language of the lyrics, possibly "CHN", "ENG", or "JPN".
+        /// The language of the lyrics, possibly "CHN", "CHN-TW", "ENG", or "JPN".
         /// </summary>
         public string language;
         /// <summary>
@@ -57,6 +57,11 @@ namespace Lyrics.Songs {
         /// The sentences of this song, divided by semantics.
         /// </summary>
         public Sentence[] sentences;
+
+        [System.NonSerialized]
+        public readonly static UnityEngine.Color DEFAULT_PLAYED_COLOUR = new UnityEngine.Color(0.1568628F, 0.1568628F, 0.8705882F, 1);
+        [System.NonSerialized]
+        public readonly static float CHUNK_MIN_LENGTH = 0.2F;
     }
 
     /// <summary>
@@ -163,10 +168,11 @@ namespace Lyrics.Songs {
         /// </summary>
         public int channel;
 
-        public Unit(string content = "", params Note[] notes)
+        public Unit(int channel, string content = "", params Note[] notes)
         {
             this.content = content;
             this.notes = notes;
+            this.channel = channel;
         }
     }
 

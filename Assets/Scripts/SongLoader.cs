@@ -51,16 +51,15 @@ namespace Lyrics.Songs{
                 JsonUtility.FromJsonOverwrite(splited[0], song);
 
                 //Directly converting UTF8 to bytes cause unexpectable errors, so use BASE64 as a medium
-                string base64 = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(splited[1]));
-                loadedMediaPath = CacheFile(info.Name + SongPreview.TypeIndexToString(song.fileType), Convert.FromBase64String(base64));
-
-                DEBUG_PrintSongInfo(song);
+                byte[] base64 = Convert.FromBase64String(splited[1]);
+                loadedMediaPath = CacheFile(info.Name + SongPreview.TypeIndexToString(song.fileType), base64);
 
                 return song;
             }
             catch(Exception e)
             {
                 Debug.LogError(e.Message);
+                GameManager.instance.Alert("创建失败，\n错误信息：" + e.Message);
                 return null;
             }
         }
@@ -81,33 +80,38 @@ namespace Lyrics.Songs{
                 {
                     throw new System.Exception("Unrecoginizable file extension!");
                 }
+                song.span = 15.0f;
 
                 string newMediaPath = CacheCopyFile(mediaPath, info.Name);
 
                 loadedMediaPath = newMediaPath;
-
-                DEBUG_PrintSongInfo(song);
 
                 return song;
             }
             catch (Exception e)
             {
                 Debug.LogError(e.Message);
+                GameManager.instance.Alert("创建失败，\n错误信息：" + e.Message);
                 return null;
             }
         }
 
-        public static void SaveIMV4(Song song, string mediaPath, string directory)
+        public static void SaveIMV4(Song song, string mediaPath, string target, bool replace)
         {
             try
             {
-                string target = Path.Combine(directory, song.title + "-" + song.singer + ".imv4");
                 if (File.Exists(target))
                 {
-                    target = GetNonExistingPath(target);
-                    if (target == null)
+                    if (!replace) {
+                        target = GetNonExistingPath(target);
+                        if (target == null)
+                        {
+                            throw new Exception("Cannot create file. There are too many overlapping files.");
+                        }
+                    }
+                    else
                     {
-                        throw new Exception("Cannot create file. There are too many overlapping files.");
+                        File.Delete(target);
                     }
                 }
 
@@ -115,14 +119,18 @@ namespace Lyrics.Songs{
                 byte[] mediaBytes = File.ReadAllBytes(mediaPath);
                 string mediaContent = Convert.ToBase64String(mediaBytes);
 
-                File.WriteAllText(target, jsonContent);
-                File.AppendAllText(target, IMV4_FLAG);
-                File.AppendAllText(target, mediaContent);
+                File.WriteAllText(target, jsonContent, encoding);
+                File.AppendAllText(target, IMV4_FLAG, encoding);
+                File.AppendAllText(target, mediaContent, encoding);
 
+                GameManager.instance.Alert("Saved at: " + target);
+
+                return;
             }
             catch (Exception e)
             {
                 Debug.LogError(e.Message);
+                GameManager.instance.Alert("保存失败，\n错误信息：" + e.Message);
                 return;
             }
         }
@@ -209,6 +217,10 @@ namespace Lyrics.Songs{
 
         public static string GetSentenceText(Sentence sentence)
         {
+            SentenceType t = GetSentenceType(sentence);
+            if (t == SentenceType.Waiting) return "(Waiting...)";
+            else if (t == SentenceType.SongInfo) return "(Song info)";
+
             string output = "";
             foreach (Chunk chunk in sentence.chunks)
             {
@@ -301,6 +313,20 @@ namespace Lyrics.Songs{
             Debug.Log(line);
         }
 
+        public static void DEBUG_PrintChunkInfo(Chunk chunk)
+        {
+            string line = "";
+            line += chunk.unit.content + "\n";
+            line += "Notation: " + chunk.unit.notation + "\n";
+            line += "Time: " + chunk.startPosition + "-" + chunk.endPosition + "\n";
+            line += "Long Chunk: " + chunk.longChunk + "\n";
+            line += "Force Question:" + chunk.forceQuestion + "\n";
+            line += "Color Code: " + chunk.colorCode + "\n";
+            line += "Event: " + chunk.eventType + "\n";
+            line += "Alter Unit Number:" + (chunk.alterUnits == null ? 0 : chunk.alterUnits.Length) + "\n\n";
+            Debug.Log(line);
+        }
+
         public static void DEBUG_PrintSongInfo(Song song)
         {
             string line = "";
@@ -313,6 +339,25 @@ namespace Lyrics.Songs{
             line += "Description: " + song.description + "\n";
             line += "File Type:" + song.fileType + "\n\n";
             Debug.Log(line);
+        }
+
+        public static void DEBUG_PrintUnitInfo(Unit unit)
+        {
+            string line = "";
+            line += "Lyric: " + unit.content + "\n";
+            line += "Notation: " + unit.notation + "\n";
+            line += "Channel: " + unit.channel + "\n";
+            line += "MIDI: " + UnitPanel.NotesToMIDICode(unit.notes) + "\n\n";
+            Debug.Log(line);
+        }
+
+        public static void DEBUG_PrintChunkUnits(Chunk chunk)
+        {
+            DEBUG_PrintUnitInfo(chunk.unit);
+            foreach(Unit c in chunk.alterUnits)
+            {
+                DEBUG_PrintUnitInfo(c);
+            }
         }
 
     }
