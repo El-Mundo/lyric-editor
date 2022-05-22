@@ -26,3 +26,10 @@ https://github.com/El-Mundo/lyric-editor/releases/download/release/IMV4_Editor_G
             -(Alternative) Unit
       
               -MIDI Note
+              
+      -Media Flag
+      
+        -Encoded Media (base64)
+        
+# Known Issue
+The PC edition cannot open MP3 files due to a native BUG of Unity Engine.
