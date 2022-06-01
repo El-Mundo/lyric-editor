@@ -19,6 +19,9 @@ https://github.com/El-Mundo/lyric-editor/releases/download/first-release/IMV4_Ed
 https://github.com/El-Mundo/lyric-editor/releases/download/release/IMV4_Editor_Guidance_Mannual.pdf
 
 # IMV4 Player
+
+![image](https://github.com/El-Mundo/lyric-editor/blob/master/player.png)
+
 The player is specially designed to play this file type.
 It by default plays the video attached the music but will generate a werid animation if the attached media is not a video.
 
