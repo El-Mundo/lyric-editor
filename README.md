@@ -18,6 +18,16 @@ https://github.com/El-Mundo/lyric-editor/releases/download/first-release/IMV4_Ed
 
 https://github.com/El-Mundo/lyric-editor/releases/download/release/IMV4_Editor_Guidance_Mannual.pdf
 
+# IMV4 Player
+
+Online Archive-Accessible Version:
+
+https://github.com/El-Mundo/lyric-editor/releases/download/release/LyricInteractions-OnlineArchive.apk
+
+No Internet Access (Older) Version:
+
+https://github.com/El-Mundo/lyric-editor/releases/download/first-release/LyricInteractions.apk
+
 # IMV4 Data Structure
 
       -Song
