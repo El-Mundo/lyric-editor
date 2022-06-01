@@ -1,5 +1,6 @@
 # lyric-editor
 This Android APP helps build IMV4s, a data structure for lyric-based music visualization.
+![image](https://github.com/El-Mundo/lyric-editor/blob/master/snapshot.png)
 
 # Download
 
