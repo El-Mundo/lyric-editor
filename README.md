@@ -29,7 +29,7 @@ Online Archive-Accessible Version:
 
 https://github.com/El-Mundo/lyric-editor/releases/download/release/LyricInteractions-OnlineArchive.apk
 
-No Internet Access (Older) Version:
+No Internet Access Requirement (Older) Version:
 
 https://github.com/El-Mundo/lyric-editor/releases/download/first-release/LyricInteractions.apk
 
