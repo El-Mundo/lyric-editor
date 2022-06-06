@@ -16,7 +16,7 @@ https://github.com/El-Mundo/lyric-editor/releases/download/first-release/IMV4_Ed
 
 # User Manual
 
-https://github.com/El-Mundo/lyric-editor/releases/download/release/IMV4_Editor_Guidance_Mannual.pdf
+[https://github.com/El-Mundo/lyric-editor/releases/download/release/IMV4_Editor_Guidance_Mannual.pdf](https://github.com/El-Mundo/lyric-editor/releases/download/release/IMV4_Editor_Guidance_Manual.pdf)
 
 # IMV4 Player
 
